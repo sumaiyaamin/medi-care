@@ -9,6 +9,7 @@ import Testimonials from "./Testimonials";
 import UpComingCamps from "./UpComingCamps";
 import AboutUs from "./AboutUs";
 import SuccessStories from "./SuccessStories";
+import HowItWorks from "./HowItWorks";
 
 const Home = () => {
     useEffect(() => {
@@ -25,6 +26,7 @@ const Home = () => {
                 <UpComingCamps />
                 <Testimonials />
                 <SuccessStories />
+                <HowItWorks />
                 <FAQ />
                 <AboutUs />
                 <NewsLetter />
