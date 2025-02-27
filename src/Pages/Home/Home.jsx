@@ -7,6 +7,7 @@ import PopularCamps from "./PopularCamps";
 import Slider from "./Slider";
 import Testimonials from "./Testimonials";
 import UpComingCamps from "./UpComingCamps";
+import AboutUs from "./AboutUs";
 
 const Home = () => {
     useEffect(() => {
@@ -23,6 +24,7 @@ const Home = () => {
                 <UpComingCamps />
                 <Testimonials />
                 <FAQ />
+                <AboutUs />
                 <NewsLetter />
             </Container>
         </>
