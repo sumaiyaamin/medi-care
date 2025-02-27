@@ -3,7 +3,7 @@
         "campName": "Health & Wellness Expo",
         "image": "https://i.ibb.co/GTTBnW0/1.jpg",
         "fees": 50,
-        "scheduledDate": "2023-12-15",
+        "scheduledDate": "2025-12-15",
         "scheduledTime": "09:00 AM",
         "venueLocation": "Central Convention Center",
         "specializedServices": [
@@ -22,7 +22,7 @@
         "campName": "Pediatric Health Fair",
         "image": "https://i.ibb.co/fpJ9Ps2/2.jpg",
         "fees": 0,
-        "scheduledDate": "2024-01-23",
+        "scheduledDate": "2025-01-23",
         "scheduledTime": "09:00 AM",
         "venueLocation": "Community Park",
         "specializedServices": ["Pediatric Consultations", "Immunization Clinic"],

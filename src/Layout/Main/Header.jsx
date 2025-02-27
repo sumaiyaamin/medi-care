@@ -9,6 +9,7 @@ import useAuth from "../../hooks/useAuth";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import useOrganizer from "../../hooks/useOrganizer";
 import useProfessional from "../../hooks/useProfessional";
+import logo from "../../assets/Logo-Medicare-atualizado-scaled.jpg"
 const Header = () => {
     const axios = useAxiosPublic();
     const { data: homeSettings = {} } = useQuery({
@@ -40,7 +41,7 @@ const Header = () => {
     const [professional] = useProfessional();
     const [organizer] = useOrganizer();
     return (
-        <>
+        <div className="flex sticky top-0 z-50 bg-white shadow-md">
             <Helmet>
                 <title>{homeSettings.siteName}</title>
             </Helmet>
@@ -61,7 +62,7 @@ const Header = () => {
                             to='/'
                         >
                             <img
-                                src={homeSettings.siteLogo}
+                                src={logo}
                                 className="w-24 md:w-36"
                                 alt="MediCare Logo"
                             />
@@ -210,7 +211,7 @@ const Header = () => {
                     )}
                 </div>
             </nav>
-        </>
+        </div>
     );
 };
 

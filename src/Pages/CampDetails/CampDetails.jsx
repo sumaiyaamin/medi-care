@@ -10,7 +10,7 @@ import Container from "../../components/Container";
 import useAdmin from "../../hooks/useAdmin";
 import useAuth from "../../hooks/useAuth";
 import useAxios from "../../hooks/useAxios";
-import useOrganizer from "../../hooks/useOrganizer";
+
 import useProfessional from "../../hooks/useProfessional";
 
 const CampDetails = () => {
@@ -20,7 +20,7 @@ const CampDetails = () => {
     const axios = useAxios();
     const [admin] = useAdmin();
     const [professional] = useProfessional();
-    const [organizer] = useOrganizer();
+ 
     const {
         _id,
         campName,
@@ -152,7 +152,7 @@ const CampDetails = () => {
                 </div>
                 <div className="flex justify-center items-center py-5">
                     <button
-                        disabled={!user || admin || organizer || professional}
+                        disabled={!user || admin || professional}
                         onClick={() => setOpenModal(true)}
                         className="text-white disabled:bg-gradient-to-br disabled:from-slate-400 disabled:via-slate-700 disabled:to-slate-900 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
                     >
@@ -259,7 +259,7 @@ const CampDetails = () => {
                                             {...register("email", {
                                                 required: "Email is Required",
                                                 pattern: {
-                                                    value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
+                                                    value: /^[\w-]+@([\w-]+\.)+[\w-]{2,4}$/g,
                                                     message: "Invalid Email format",
                                                 },
                                             })}

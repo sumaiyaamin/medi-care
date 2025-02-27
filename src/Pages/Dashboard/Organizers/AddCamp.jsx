@@ -10,7 +10,7 @@ import { TagInput } from "rsuite";
 import uploader from "../../../Utils/uploader";
 import useAuth from "../../../hooks/useAuth";
 import useAxios from "../../../hooks/useAxios";
-import "./AddCamp.css";
+
 
 const AddCamp = () => {
     const [options, setOptions] = useState({});

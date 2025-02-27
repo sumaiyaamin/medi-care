@@ -1,15 +1,17 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getStorage } from "firebase/storage";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: import.meta.env.VITE_APIKEY,
-    authDomain: import.meta.env.VITE_AUTHDOMAIN,
-    projectId: import.meta.env.VITE_PROJECTID,
-    storageBucket: import.meta.env.VITE_STORAGEBUCKET,
-    messagingSenderId: import.meta.env.VITE_MESSAGINGSENDERID,
-    appId: import.meta.env.VITE_APPID,
+  apiKey: "AIzaSyBIxzGxavMdTHKe8coD46b-l5glxKgJuRY",
+  authDomain: "medi-care-f142b.firebaseapp.com",
+  projectId: "medi-care-f142b",
+  storageBucket: "medi-care-f142b.firebasestorage.app",
+  messagingSenderId: "58611596207",
+  appId: "1:58611596207:web:531b50e013e0fb44580d5a"
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-export const storage = getStorage(app);

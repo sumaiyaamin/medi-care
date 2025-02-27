@@ -1,7 +1,7 @@
 import { FaFacebook, FaGithub, FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import logoImage from "../../assets/logo.png";
+import logo from "../../assets/Logo-Medicare-atualizado-scaled.jpg";
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between px-5 lg:px-0">
                     <div className="mb-6 md:mb-0 md:w-1/3">
                         <Link href="/" className="flex items-center">
-                            <img src={logoImage} className="h-8 me-3" alt="MediCare Logo" />
+                            <img src={logo} className="h-8 me-3" alt="MediCare Logo" />
                         </Link>
                         <p className="py-2 text-gray-400">
                             Welcome to MediCamp, where healthcare meets compassion. Our mission is

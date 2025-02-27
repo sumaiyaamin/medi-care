@@ -12,7 +12,7 @@ import useAxios from "../../hooks/useAxios";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import useOrganizer from "../../hooks/useOrganizer";
 import useProfessional from "../../hooks/useProfessional";
-
+import logo from "../../assets/Logo-Medicare-atualizado-scaled.jpg"
 const Navbar = ({ sidebarCollapse, setSidebarCollapse }) => {
     const axios = useAxiosPublic();
     const axiosSecure = useAxios();
@@ -62,7 +62,7 @@ const Navbar = ({ sidebarCollapse, setSidebarCollapse }) => {
     const [professional] = useProfessional();
     const [organizer] = useOrganizer();
     return (
-        <div className="flex">
+        <div className="flex sticky top-0 z-50 bg-white shadow-md">
             <Helmet>
                 <title>{dashboardSettings.siteName}</title>
             </Helmet>
@@ -70,7 +70,7 @@ const Navbar = ({ sidebarCollapse, setSidebarCollapse }) => {
                 <button onClick={handleSidebarCollapse} className="md:hidden">
                     <FiAlignLeft fill="#0F172A" size={25} />
                 </button>
-                <img className="w-32" src={dashboardSettings.siteLogo} alt="" />
+                <img className="w-32" src={logo} alt="" />
             </div>
             <div className="bg-white h-16 px-4 flex items-center border-b flex-1 border-gray-200 justify-end md:justify-between">
                 <div className="relative hidden md:block">
