@@ -33,23 +33,15 @@
 
 ### Organizer Credential:
 
-```bash
-organizer@gmail.com
-```
 
-```bash
-4qeaKeRGwi8@iYB1
-```
-
-### HealthCare Professionals Credential:
-
-```bash
-professional@gmail.com
+espresso@gmail.com
 ```
 
 ```bash
 4qeaKeRGwi8@iYB
 ```
+
+
 
 ## Live Link
 

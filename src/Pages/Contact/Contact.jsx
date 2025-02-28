@@ -11,7 +11,7 @@ const Contact = () => {
     };
     const contactHandler = (e) => {
         e.preventDefault();
-        toast.success("Your Massage Send Success");
+        toast.success("Your Message Was Send Success");
         e.target.reset();
     };
     useEffect(() => {
@@ -79,7 +79,7 @@ const Contact = () => {
                             type="submit"
                             className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg w-full"
                         >
-                            Button
+                            Submit
                         </button>
                     </form>
                 </div>

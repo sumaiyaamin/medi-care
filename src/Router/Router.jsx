@@ -64,11 +64,8 @@ const Router = createBrowserRouter([
             },
             {
                 path: "/available-camps",
-                element: (
-                    <PrivateRouter>
-                        <AvailableCamps />
-                    </PrivateRouter>
-                ),
+                element: <AvailableCamps />
+
             },
             {
                 path: "/login",

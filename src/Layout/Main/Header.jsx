@@ -81,11 +81,11 @@ const Header = () => {
                             <NavLink to="/contact-us" className="navLink">
                                 Contact Us
                             </NavLink>
-                            {user && (
+                            
                                 <NavLink to="/available-camps" className="navLink">
                                     Available Camps
                                 </NavLink>
-                            )}
+                            
                             {user && !organizer&& !professional&& !admin&&(
                                 <NavLink to="/dashboard/participant-home" className="navLink">
                                     Dashboard
